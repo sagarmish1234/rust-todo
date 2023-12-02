@@ -26,6 +26,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tag: v0.0.1
           files: |
             target/release/todo_amd64
         env:
@@ -51,6 +52,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tag: v0.0.1
           files: target/release/todo.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -76,6 +78,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tag: v0.0.1
           files: |
             target/release/PROJECT_NAME_darwin
         env:
